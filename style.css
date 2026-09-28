@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #1e3a8a; /* Azul principal */
+  color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #bfdbfe;
+}
+
+/* Área dos Cards de Resumo */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.card-valor {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+
+/* Card de destaque (Frequência) */
+.card-destaque {
+  border-top: 4px solid #f97316; /* Detalhe em laranja */
+}
+
+.card-status {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: #ffedd5;
+  color: #c2410c;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+/* Tabela Responsiva */
+.tabela-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow-x: auto; /* Permite rolar pro lado no celular */
+  border: 1px solid #e5e7eb;
+}
+
+.tabela-boletim {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 600px;
+}
+
+.tabela-boletim th {
+  background-color: #f8fafc;
+  color: #475569;
+  padding: 14px;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.tabela-boletim td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.95rem;
+}
+
+/* Destaques de Situação */
+.situacao-bom {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.situacao-atencao {
+  color: #c2410c;
+  font-weight: 600;
+}
+
+.situacao-indisponivel {
+  color: #6b7280;
+  font-style: italic;
+}
