@@ -33,12 +33,13 @@ body {
   font-size: 1.1rem;
 }
 
-/* Área de Login */
+/* Área de Login Centralizada */
 .login-container {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  align-items: center;
+  min-height: 50vh;
+  margin: 20px auto;
 }
 
 .login-box {
@@ -65,162 +66,3 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
-}
-
-.login-form input {
-  padding: 10px;
-  border: 1px solid #cbd5e1;
-  border-radius: 4px;
-  font-size: 1rem;
-  width: 60%;
-}
-
-.login-form button, .acoes-container button, .edicao-botoes button {
-  padding: 10px 16px;
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.login-form button:hover, .acoes-container button:hover, .edicao-botoes button:hover {
-  background-color: #1d4ed8;
-}
-
-.btn-secundario {
-  background-color: #64748b !important;
-}
-
-.btn-secundario:hover {
-  background-color: #475569 !important;
-}
-
-.mensagem-status {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #d97706;
-}
-
-/* Ações */
-.acoes-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-}
-
-/* Cards de Resumo */
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.card {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  text-align: center;
-  border-left: 4px solid #cbd5e1;
-}
-
-.card h3 {
-  font-size: 0.9rem;
-  color: #64748b;
-  margin-bottom: 8px;
-}
-
-.card-valor {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #1e293b;
-}
-
-.card-destaque {
-  border-left-color: #2563eb;
-  background-color: #eff6ff;
-}
-
-.card-status {
-  font-size: 0.8rem;
-  color: #2563eb;
-  display: block;
-  margin-top: 5px;
-}
-
-/* Edição */
-.edicao-container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 25px;
-}
-
-.edicao-container h2 {
-  color: #1e3a8a;
-  margin-bottom: 15px;
-}
-
-.edicao-container input {
-  width: 100%;
-  padding: 6px;
-  border: 1px solid #cbd5e1;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.edicao-container input.campo-invalido {
-  border-color: #ef4444;
-  background-color: #fef2f2;
-}
-
-.edicao-botoes {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-  justify-content: flex-end;
-}
-
-/* Tabela */
-.tabela-container {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  overflow-x: auto;
-}
-
-.tabela-boletim {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-.tabela-boletim th, .tabela-boletim td {
-  padding: 12px 16px;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.tabela-boletim th {
-  background-color: #f8fafc;
-  color: #475569;
-  font-size: 0.9rem;
-}
-
-.situacao-bom {
-  color: #16a34a;
-  font-weight: bold;
-}
-
-.situacao-atencao {
-  color: #dc2626;
-  font-weight: bold;
-}
-
-.situacao-indisponivel {
-  color: #94a3b8;
-}
