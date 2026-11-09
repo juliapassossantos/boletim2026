@@ -21,3 +21,8 @@ let dadosBoletim = [
   { disciplina: "Educação Digital", tri1: 88, tri2: 9.1, tri3: 93, faltas: [1, 0, 1] },
   { disciplina: "Educação Financeira", tri1: 74, tri2: "7,8", tri3: null, faltas: [1, 1, 1] },
   { disciplina: "Estudo Orientado", tri1: 8.0, tri2: 83, tri3: "8,5", faltas: [0, 1, 0] },
+  const CONFIG_ALUNO = {
+  turma: "8B",
+  numeroChamada: 19,
+  apiUrl: "https://boletim-api.profbt.com.br"
+};
