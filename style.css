@@ -1,12 +1,13 @@
+/* Estilos globais e reset básico */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #f4f7f6;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
   color: #333;
   padding: 20px;
 }
@@ -18,112 +19,208 @@ body {
 
 /* Cabeçalho */
 .header {
-  background-color: #1e3a8a; /* Azul principal */
-  color: #ffffff;
-  padding: 24px;
-  border-radius: 12px;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .header h1 {
-  font-size: 2rem;
-  margin-bottom: 6px;
+  color: #1e3a8a;
+  margin-bottom: 5px;
 }
 
 .subtitulo {
+  color: #64748b;
   font-size: 1.1rem;
-  color: #bfdbfe;
 }
 
-/* Área dos Cards de Resumo */
+/* Área de Login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.login-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.login-form button, .acoes-container button, .edicao-botoes button {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.login-form button:hover, .acoes-container button:hover, .edicao-botoes button:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secundario {
+  background-color: #64748b !important;
+}
+
+.btn-secundario:hover {
+  background-color: #475569 !important;
+}
+
+.mensagem-status {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #d97706;
+}
+
+/* Ações */
+.acoes-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* Cards de Resumo */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 16px;
-  margin-bottom: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
 .card {
   background-color: #ffffff;
-  padding: 18px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave */
-  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   text-align: center;
+  border-left: 4px solid #cbd5e1;
 }
 
 .card h3 {
-  font-size: 0.85rem;
-  color: #6b7280;
-  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #64748b;
   margin-bottom: 8px;
 }
 
 .card-valor {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #1e3a8a;
+  color: #1e293b;
 }
 
-/* Card de destaque (Frequência) */
 .card-destaque {
-  border-top: 4px solid #f97316; /* Detalhe em laranja */
+  border-left-color: #2563eb;
+  background-color: #eff6ff;
 }
 
 .card-status {
-  display: inline-block;
-  font-size: 0.75rem;
-  background-color: #ffedd5;
-  color: #c2410c;
-  padding: 2px 8px;
-  border-radius: 12px;
-  margin-top: 6px;
-  font-weight: 600;
+  font-size: 0.8rem;
+  color: #2563eb;
+  display: block;
+  margin-top: 5px;
 }
 
-/* Tabela Responsiva */
+/* Edição */
+.edicao-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.edicao-container h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.edicao-container input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.edicao-container input.campo-invalido {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.edicao-botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+
+/* Tabela */
 .tabela-container {
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  overflow-x: auto; /* Permite rolar pro lado no celular */
-  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
 }
 
 .tabela-boletim {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  min-width: 600px;
+}
+
+.tabela-boletim th, .tabela-boletim td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .tabela-boletim th {
   background-color: #f8fafc;
   color: #475569;
-  padding: 14px;
   font-size: 0.9rem;
-  border-bottom: 2px solid #e2e8f0;
 }
 
-.tabela-boletim td {
-  padding: 12px 14px;
-  border-bottom: 1px solid #f1f5f9;
-  font-size: 0.95rem;
-}
-
-/* Destaques de Situação */
 .situacao-bom {
-  color: #15803d;
-  font-weight: 600;
+  color: #16a34a;
+  font-weight: bold;
 }
 
 .situacao-atencao {
-  color: #c2410c;
-  font-weight: 600;
+  color: #dc2626;
+  font-weight: bold;
 }
 
 .situacao-indisponivel {
-  color: #6b7280;
-  font-style: italic;
+  color: #94a3b8;
 }
